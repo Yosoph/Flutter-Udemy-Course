@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:projects/home_screen.dart';
-import 'package:projects/login_screen.dart';
-import 'package:projects/messenger_screen.dart';
-import 'package:projects/users_screen.dart';
-import 'bmi_result_screen.dart';
-import 'bmi_screen.dart';
-import 'counter_screen.dart';
+import 'package:projects/modules/home/home_screen.dart';
+import 'package:projects/modules/login/login_screen.dart';
+import 'package:projects/modules/messenger/messenger_screen.dart';
+import 'package:projects/modules/users/users_screen.dart';
+import 'modules/bmi_result/bmi_result_screen.dart';
+import 'modules/bmi/bmi_screen.dart';
+import 'modules/counter/counter_screen.dart';
 
 void main() {
   runApp(MyApp());
