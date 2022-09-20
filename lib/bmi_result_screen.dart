@@ -40,7 +40,7 @@ class BmiResultScreen extends StatelessWidget {
          elevation: 0.0,
          backgroundColor: Colors.indigo[900],
        ),
-       body: Padding(
+       body: Padding (
          padding: const EdgeInsets.symmetric(
            horizontal: 15.0,
            vertical: 250.0,
