@@ -26,3 +26,41 @@ Widget defaultButton({
     color: background,
   ),
 );
+
+Widget defaultFormField({
+  required TextEditingController controller,
+  required TextInputType type,
+  required validate,
+  required String label,
+  required IconData prefix,
+  IconData? suffix,
+  onSubmit,
+  onChanged,
+  bool isPassword = false,
+  suffixPressed,
+}) => TextFormField(
+  controller: controller,
+  keyboardType: type,
+  obscureText: isPassword,
+  onFieldSubmitted: (String value) {
+    print(value);
+  },
+  onChanged: (String value) {
+    print(value);
+  },
+  validator: validate,
+  decoration: InputDecoration(
+    //hintText: 'Email Address',
+    labelText: label,
+    prefixIcon: Icon(
+      prefix,
+    ),
+    suffixIcon: suffix != null ? IconButton(
+      icon: Icon(
+        suffix,
+      ),
+      onPressed: suffixPressed,
+    ) : null,
+    border: OutlineInputBorder(),
+  ),
+);
