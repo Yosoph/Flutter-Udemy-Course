@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projects/modules/new_tasks/new_tasks_screen.dart';
 
 class HomeLayout extends StatefulWidget {
   const HomeLayout({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _HomeLayoutState extends State<HomeLayout> {
           'TODO APP',
         ),
       ),
+      body: NewTasksScreen(),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
 
